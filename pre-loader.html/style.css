@@ -1,0 +1,62 @@
+.wrap{
+  background: white;
+  margin:0;
+  padding:0;
+  top:0;
+  bottom:0;
+}
+body{
+  background: white;
+  ;
+}
+.wrap{
+  position:absolute;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.circle{
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.circle-blue{
+   background: #4185F4;
+   animation: wave 1000ms ease-in-out
+   infinite;
+}
+.circle-red{
+  background: #EA4235;
+  animation: wave 1000ms 100ms
+   ease-in-out infinite;
+}
+.circle-yellow{
+  background: #F9BD00;
+  animation: wave 1000ms 200ms 
+ease-in-out infinite;
+}
+.circle-green{
+  background: #33A853;
+  animation: wave 1000ms 300ms 
+  ease-in-out infinite;
+}
+.disappear{
+  animation: wave 1s forwards;
+}
+
+@keyframes wave{
+  0%{
+    transform: translateY(10px);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(10px);
+    opacity: 10;
+    visibility: hidden;
+  }
+  }
