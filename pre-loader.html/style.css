@@ -24,22 +24,22 @@ body{
   border-radius: 50%;
 }
 .circle-blue{
-   background: #4185F4;
+   background:  #9932CC;
    animation: wave 1000ms ease-in-out
    infinite;
 }
 .circle-red{
-  background: #EA4235;
+  background: #9400D3;
   animation: wave 1000ms 100ms
    ease-in-out infinite;
 }
 .circle-yellow{
-  background: #F9BD00;
+  background: #800080;
   animation: wave 1000ms 200ms 
 ease-in-out infinite;
 }
 .circle-green{
-  background: #33A853;
+  background:#8B008B;
   animation: wave 1000ms 300ms 
   ease-in-out infinite;
 }
@@ -48,10 +48,10 @@ ease-in-out infinite;
 }
 
 @keyframes wave{
-  0%{
+  1%{
     transform: translateY(10px);
   }
-  50%{
+  80%{
     transform: translateY(-10px);
   }
   100%{
